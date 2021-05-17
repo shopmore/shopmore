@@ -93,6 +93,7 @@ dist
 
 # Serverless directories
 .serverless/
+.nimbella/
 
 # FuseBox cache
 .fusebox/
@@ -102,3 +103,4 @@ dist
 
 # TernJS port file
 .tern-port
+

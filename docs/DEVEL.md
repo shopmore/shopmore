@@ -1,6 +1,6 @@
 # Development
 
-For development you may need to register and get a free account on [Nimbella](www.nimbella.com), or  setup your own [OpenWhisk](openwhisk.apache.org) deployment.
+For development you may need to register and get a free account on [Nimbella](https://www.nimbella.com/), or  setup your own [OpenWhisk](https://openwhisk.apache.org/) deployment.
 
 Install `nim` then deploy it with `nim project deploy .`
 

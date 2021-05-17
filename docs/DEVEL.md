@@ -12,7 +12,7 @@ Please refer to the [nimbella training](https://github.com/nimbella/nimbella-tra
 
 You need multiple terminals! Three (yes...)!
 
-1. From the project root start `nim project:web-serve web` to serve local changes and proxy to the backed in cloud 
+1. From the project root start `nim project:serve-web web` to serve local changes and proxy to the backed in cloud 
 1. From the project root also start watch mode: `nim project watch --exclude=web .`
 1. From the `web` folder start `npm run dev`
 

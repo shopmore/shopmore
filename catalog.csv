@@ -1,0 +1,34 @@
+CATEGORIA;DESCRIZIONE;TAGLIA;IMMAGINE;PREZZO
+MAN;Long sleeve cotton shirt;S-M-L-XL-XXL;Uomo\bordot.png; 50,00
+MAN;Long sleeve cotton blue shirt;S-M-L-XL-XXL;Uomo\azzurra.png; 53,00
+MAN;long sleeve cotton checked patterned shirt;S-M-L-XL-XXL;Uomo\papillonblu.png; 60,00
+MAN;long sleeve cotton patterned shirt;S-M-L-XL-XXL;Uomo\FantasiaBiancoNero.png; 25,00
+MAN;long sleeve dot patterned shirt;S-M-L-XL-XXL;Uomo\pois.png; 34,00 
+MAN;long sleeve striped shirt;S-M-L-XL-XXL;Uomo\blurighe.png; 39,00 
+MAN;long sleeve cotton patterned shirt;S-M-L-XL-XXL;Uomo\quadri.png; 22,00
+MAN;Long sleeve cotton shirt;S-M-L-XL-XXL;Uomo\blurossobianco.png; 47,00 
+MAN;Long sleeve cotton patterned  shirt;S-M-L-XL-XXL;Uomo\biancafiori.png; 33,00
+MAN;Long sleeve cotton shirt;S-M-L-XL-XXL;Uomo\marmoreo.png; 57,00
+WOMAN;White short sleeve t-shirt;S-M-L-XL;Donna\magliabianca.png; 20,00 
+WOMAN;Blue tank top;S-M-L-XL;Donna\canottablu.png; 15,00
+WOMAN;Long sleeve cotton blue shirt;S-M-L-XL;Donna\camiciarigheblu.png; 54,00
+WOMAN;Elegant black shirt;S-M-L-XL;Donna\camicianeraparticolare.png; 78,00
+WOMAN;Patterned shirt;S-M-L-XL;Donna\camiciafantasia.png; 45,00
+WOMAN;White silk shirt;S-M-L-XL;Donna\camiciabiancavol.png; 130,00
+WOMAN;Black and white shirt;S-M-L-XL;Donna\bianconero.png; 70,00 
+WOMAN;White striped shirt;S-M-L-XL;Donna\biancarighe.png; 36,00 
+WOMAN;Patterned t-shirt;S-M-L-XL;Donna\magliafantasia.png; 23,00 
+WOMAN;Colored cotton t-shirt;S-M-L-XL;Donna\magliarancio.png; 13,00 
+WOMAN;Black t-shirt;S-M-L-XL;Donna\neramano.png; 15,00
+WOMAN;Colored cotton t-shirt;S-M-L-XL;Donna\nevada.png; 13,00 
+WOMAN;Colored cotton t-shirt;S-M-L-XL;Donna\senape.png; 38,00 
+CHILD;White shirt;4/5 - 6/7 - 8/9 - 9/10 - 11/12;Bimbo\camiciabianca.png; 20,00 
+CHILD;Checked shirt for baby girl;4/5 - 6/7 - 8/9 - 9/10 - 11/12;Bimbo\camiciabimba.png; 18,00 
+CHILD;Shirt with fishes for boys;4/5 - 6/7 - 8/9 - 9/10 - 11/12;Bimbo\camiciapesci.png; 17,00 
+CHILD;Long sleeve cotton patterned shirt;4/5 - 6/7 - 8/9 - 9/10 - 11/12;Bimbo\camiciaquadri.png; 10,00 
+CHILD;Light blue shirt ;4/5 - 6/7 - 8/9 - 9/10 - 11/12;Bimbo\camiciarigheverde.png; 25,00
+CHILD;Gray jacket;4/5 - 6/7 - 8/9 - 9/10 - 11/12;Bimbo\giacca.png; 62,00
+CHILD;Red t-shirt;4/5 - 6/7 - 8/9 - 9/10 - 11/12;Bimbo\magliarossa.png; 30,00 
+CHILD;Blue T-shirt;4/5 - 6/7 - 8/9 - 9/10 - 11/12;Bimbo\magliettablu.png; 27,00 
+CHILD;Grey T-shirt;4/5 - 6/7 - 8/9 - 9/10 - 11/12;Bimbo\magliettagrigia.png; 31,00 
+CHILD;Brown bow tie;4/5 - 6/7 - 8/9 - 9/10 - 11/12;Bimbo\papillon.png; 32,00

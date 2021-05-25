@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index</title>
+  <script type="module">
+    import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+  </script>
+</head>
+
+<body>
+
+  <h1> Example w/ TURBO </h1>
+
+  <p> If you press on the buttons the corresponding element will be replaced by the response from the server. </p>
+  <form action="/title" method="post" style="margin-bottom: 20px">
+    <button class="button ">Replace title</button>
+  </form>
+
+  <form action="/paragraph" method="post">
+    <button class="button ">Replace paragraph</button>
+  </form>
+
+
+  <h3 id="title">Title to be replaced</h3>
+
+
+  <p id="paragraph"> This is the paragraph to be replaced </p>
+
+</body>
+
+</html>

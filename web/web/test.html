@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Turbo example</title>
+
+	<script type="module">
+    import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+  </script>
+</head>
+
+<body>
+	<h1> Turbo example </h1>
+	
+	<div style="border: 1px solid black; padding: 20px">
+		<turbo-frame id="element">
+			<form action="/api/samples/test" method="post" style="margin-bottom: 20px">
+				<button class="button ">Make request</button>
+			</form>
+			
+			<h3>Requests:</h3>
+			
+		</turbo-frame>
+	</div>
+
+	<p> This text is outside of the turbo frame </p> 
+</body>
+</html>

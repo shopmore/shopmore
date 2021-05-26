@@ -10,18 +10,19 @@ Please refer to the [nimbella training](https://github.com/nimbella/nimbella-tra
 
 # Development setup
 
-You need multiple terminals! Three (yes...)!
+```
+$ cd web
+$ npm run dev
 
-1. From the project root start `nim project:serve-web web` to serve local changes and proxy to the backed in cloud 
-1. From the project root also start watch mode: `nim project watch --exclude=web .`
-1. From the `web` folder start `npm run dev`
-
+```
 Now open `https://localhost:8080/`
 
-If everything is fine then you can now change backend code and frontend code and see immediately the result (yes, you have to reload the the page, unfortunately the livereload does not work (yet) in the proxyified frontend)
+If everything is fine then you can now change backend code and frontend code and see immediately the result.
+
+Unfortunately because of [this bug](https://github.com/nimbella/nimbella-cli/issues/110) currently the front end does not update with live reload. You need to refresh manually
 
 # Deploy
 
 `nim project deploy .`
 
-Then watch your 
+deploy on Nimbella

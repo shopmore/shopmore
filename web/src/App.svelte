@@ -12,7 +12,7 @@
 
 <main>
 	<h1>{message}</h1>
-	<p>What is your name?</p>
+	<p>Hello11, What is your name?</p>
 	<input type="text" bind:value={name} on:input={update}>
 </main>
 

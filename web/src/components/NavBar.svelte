@@ -4,8 +4,7 @@
     import { Icon } from 'sveltestrap';
     import {Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink,Button} from 'sveltestrap';
   
-   
-
+  
     let isOpen = false;
     let uteauth='Eseguire il login';
     let classe="ico";
@@ -22,7 +21,7 @@
         ['./about','about','warning',true,'display'],
         ['./login','login','success',true,'person-circle'],
         ['./logout','logout','primary',true,'arrow-right-square'],
-        ['./blog','blog','danger',true,'globe']
+        ['./hello','hello','danger',true,'globe']
     ];
 
     function handleOnClick(event) {

@@ -4,37 +4,48 @@
       FormGroup,  Input, Label
     } from 'sveltestrap';
     import { onMount } from 'svelte';
+    import { page, metatags, goto } from '@roxi/routify'
+    
     import Remote from '../remote/remo.svelte';
     import StatusBar from'../components/StatusBar.svelte';
+    import  {setLoginUte} from '../components/NavBar.svelte'; //funzione definita in navbar
+    import  { getLocalStorage } from '../remote/remo.svelte';
+    import {logprod} from '../enviroments/config.svelte';
 
-   
+
     let childstatusbar;
     let childremote;
-    let childute;
 
     let name = '';
     let password = '';
     let focused = false;
     let mes="";
-    
+    let item = false;
 
     onMount(() => {
+     console.log($page.title);
+     if(getLocalStorage()){
+        item=true;
+        mes="Utente autenticato !!";
+     }
      
     });
     const changeEvent = (Event) => {
-        console.log("event : ", Event.target.value);
+      if(logprod){
+          console.log("event : ", Event.target.value);
+      }
     };
 
    
     function submit(Event){
-        console.log("valueForm ", {name}, {password});
+      
         const data ={
           nome:name,
           password:password
         }
-        console.log(data);
+        
+        
         childstatusbar.toggle(false, "Elaborazione in corso", true);
-
         childremote.callRemote(data, setResult, setErr);
 
 
@@ -42,11 +53,14 @@
              mes=res.ragsoc.ragsoc;
             if(res.id === "OK"){
               childstatusbar.toggle(false, res.ragsoc.ragsoc, true);
-            //  childute.setLoginUte(res.ragsoc.ragsoc);
+              setLoginUte(res.ragsoc.ragsoc);
+              item=true;
+              
             }else{
               childstatusbar.toggle(true, res.ragsoc.ragsoc, true);
             }
             hideStatusBar(3000);
+           
        }
        function setErr(content){
             childstatusbar.toggle(true, content, true);
@@ -56,10 +70,14 @@
        function hideStatusBar(time){
             setTimeout(function(){
               childstatusbar.toggle(false,'',false);
+              $goto('./index');
             }, time);
        }
     }
-   
+    
+	  function isDisable(item) {
+				return item;
+		}
   </script>
   <!-- svelte-ignore missing-declaration -->
   <Remote bind:this="{childremote}" />
@@ -86,6 +104,7 @@
                     on:blur={() => (focused = false)}
                     on:focus={() => (focused = true)}
                     bind:value={name}
+                    placeholder="nimbella"
                 />
                 <Label>Password</Label>
                 <Input
@@ -94,9 +113,10 @@
                     on:blur={() => (focused = false)}
                     on:focus={() => (focused = true)}
                     bind:value={password}
+                    placeholder="action"
                 />
             </FormGroup>
-            <Button on:click={changeEvent}>Button</Button>
+            <Button on:click={changeEvent} disabled='{isDisable(item)}'>Button</Button>
         </form>
       </CardText>
     </CardBody>

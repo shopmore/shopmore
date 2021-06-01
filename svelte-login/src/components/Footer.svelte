@@ -10,7 +10,7 @@
       
       <span class="tleft"><span class="icon"><Icon name={icon} /></span>Applicazione Sveltejs e Sveltestrap</span>
    
-  </footer>
+  </footer> 
   
 <style>
 .footer {

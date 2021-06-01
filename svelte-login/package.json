@@ -3,16 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "run-p watch:routify watch:rollup",
-    "build": "rollup -c",
-    "prebuild": "routify --single-build",
-    "watch:rollup": "rollup -c -w",
-    "watch:routify": "routify",
-    "start": "sirv public --single"
+    "dev": "run-p dev:*",
+    "dev:rollup": "rollup -c -w",
+    "dev:routify": "routify",
+    "build": "routify -b && rollup -c",
+    "__mfdev": "rollup -c -w",
+    "__mfbuild": "rollup -c",
+    "start": "sirv public --single",
+    "__dev": "run-p watch:routify watch:rollup",
+    "__prebuild": "routify --single-build",
+    "__watch:rollup": "rollup -c -w",
+    "__watch:routify": "routify"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "@roxi/routify": "^2.18.0",
     "npm-run-all": "^4.1.5",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
@@ -25,6 +31,7 @@
     "@sveltech/routify": "^1.1.1-1",
     "bootstrap": "^5.0.1",
     "sirv-cli": "^1.0.0",
+    "svelte-loading-spinners": "^0.1.5",
     "sveltestrap": "^5.0.6"
   }
 }

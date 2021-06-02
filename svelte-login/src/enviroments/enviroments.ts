@@ -1,5 +1,5 @@
 const environment = {
-  production: true,
+  production: false,
   urlRegistra:'',
   urlLoginp:'/api/backend/login',
   urlLoginl:'https://cmannocg-qahd7fgfeti-apigcp.nimbella.io/api/backend/login',

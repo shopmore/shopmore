@@ -12,7 +12,7 @@
     "watch:nim": "nim project watch .. --exclude web",
     "start": "nim project:serve-web",
     "validate": "svelte-check"
-  },
+  }, 
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",

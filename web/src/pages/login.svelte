@@ -6,7 +6,7 @@
     import { onMount } from 'svelte';
     import Remote from '../remote/remo.svelte';
     import StatusBar from'../components/StatusBar.svelte';
-
+    //import { page,url,  goto } from '@roxi/routify'
    
     let childstatusbar;
     let childremote;
@@ -43,6 +43,7 @@
             if(res.id === "OK"){
               childstatusbar.toggle(false, res.ragsoc.ragsoc, true);
             //  childute.setLoginUte(res.ragsoc.ragsoc);
+            //$goto('./index');
             }else{
               childstatusbar.toggle(true, res.ragsoc.ragsoc, true);
             }

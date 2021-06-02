@@ -6,7 +6,7 @@ import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
-
+/* import { routify } from '@sveltech/routify'; */
 const production = !process.env.ROLLUP_WATCH;
 
 function serve() {
@@ -32,13 +32,24 @@ function serve() {
 
 export default {
 	input: 'src/main.ts',
-	output: {
+	/* output: {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
 		file: 'web/build/bundle.js'
+	}, */
+
+	output: {
+		sourcemap: true,
+		format: 'esm',
+		name: 'app',
+		dir: 'web/dist/build'
 	},
 	plugins: [
+		/* routify({
+			singleBuild: production,
+			dynamicImports: true,
+		  }), */
 		svelte({
 			preprocess: sveltePreprocess({ sourceMap: !production }),
 			compilerOptions: {
